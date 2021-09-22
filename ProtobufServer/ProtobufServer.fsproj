@@ -26,4 +26,8 @@
     <PackageReference Update="FSharp.Core" Version="5.0.2" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Properties\" />
+  </ItemGroup>
+
 </Project>
