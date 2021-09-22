@@ -14,9 +14,20 @@ type CalculatorService() =
 
 type TimeService() =
     interface ITimeService with
+
+        (*
         member __.SubscribeAsync() =
             asyncSeq {
                 while true do
                     yield { Time = DateTime.Now }
+                    do! Async.Sleep 1000
+            } |> AsyncSeq.toAsyncEnum
+        *)
+
+        member __.SubscribeTupleAsync() =
+            asyncSeq {
+                while true do
+                    let time = DateTime.Now
+                    yield string time.Minute, string time.Second
                     do! Async.Sleep 1000
             } |> AsyncSeq.toAsyncEnum

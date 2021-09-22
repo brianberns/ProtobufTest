@@ -35,4 +35,5 @@ type TimeResult =
 
 [<ServiceContract>]
 type ITimeService =
-    abstract member SubscribeAsync : unit -> IAsyncEnumerable<TimeResult>
+    // abstract member SubscribeAsync : unit -> IAsyncEnumerable<TimeResult>
+    abstract member SubscribeTupleAsync : unit -> IAsyncEnumerable<string * string>

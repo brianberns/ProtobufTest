@@ -21,8 +21,8 @@ let clock () =
 
         let client = http.CreateGrpcService<ITimeService>()
         async {
-            for result in client.SubscribeAsync() |> AsyncSeq.ofAsyncEnum do
-                printfn "%A" result.Time
+            for (min, sec) in client.SubscribeTupleAsync() |> AsyncSeq.ofAsyncEnum do
+                printfn "%s, %s" min sec
         } |> Async.RunSynchronously
     } |> fun t -> t.Result
 

@@ -1,6 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
+    <OutputType>Exe</OutputType>
     <TargetFramework>net5.0</TargetFramework>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
     <WarnOn>3390;$(WarnOn)</WarnOn>
@@ -8,10 +9,12 @@
 
   <ItemGroup>
     <Compile Include="Contract.fs" />
+    <Compile Include="Program.fs" />
   </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="protobuf-net" Version="3.0.101" />
+    <PackageReference Include="protobuf-net.Grpc.Reflection" Version="1.0.152" />
     <PackageReference Include="System.ServiceModel.Primitives" Version="4.8.1" />
   </ItemGroup>
 
