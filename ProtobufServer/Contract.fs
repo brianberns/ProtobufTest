@@ -7,7 +7,7 @@ open ProtobufCommon
 
 open FSharp.Control
 
-type CalculatorService =
+type CalculatorService() =
     interface ICalculator with
         member __.MultiplyAsync(req : MultiplyRequest) =
             ValueTask<MultiplyResult>({ Result = req.X * req.Y })

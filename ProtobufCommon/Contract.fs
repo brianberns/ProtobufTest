@@ -10,14 +10,14 @@ open System.Threading.Tasks
 
 open ProtoBuf
 
-[<DataContract>]
+[<DataContract; CLIMutable>]
 type MultiplyRequest =
     {
         [<DataMember(Order = 1)>] X : int
         [<DataMember(Order = 2)>] Y : int
     }
 
-[<DataContract>]
+[<DataContract; CLIMutable>]
 type MultiplyResult =
     {
         [<DataMember(Order = 1)>] Result : int
@@ -27,7 +27,7 @@ type MultiplyResult =
 type ICalculator =
     abstract member MultiplyAsync : MultiplyRequest -> ValueTask<MultiplyResult>
 
-[<ProtoContract>]
+[<ProtoContract; CLIMutable>]
 type TimeResult =
     {
         [<ProtoMember(1, DataFormat = DataFormat.WellKnown)>] Time : DateTime

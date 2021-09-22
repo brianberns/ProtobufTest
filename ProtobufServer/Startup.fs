@@ -20,5 +20,6 @@ type Startup() =
 
         app.UseRouting()
            .UseEndpoints(fun endpoints ->
+                endpoints.MapGrpcService<CalculatorService>() |> ignore
                 endpoints.MapGrpcService<TimeService>() |> ignore)
            |> ignore

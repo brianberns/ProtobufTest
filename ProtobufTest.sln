@@ -9,6 +9,8 @@ Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "ProtobufCommon", "ProtobufC
 EndProject
 Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "ProtobufServer", "ProtobufServer\ProtobufServer.fsproj", "{DA9C2991-F9EA-479C-BA2A-53EC73B2FC59}"
 EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "ProtobufClient", "ProtobufClient\ProtobufClient.fsproj", "{897F30AA-F9CD-4C5E-AA83-2869B54D4F4D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{DA9C2991-F9EA-479C-BA2A-53EC73B2FC59}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DA9C2991-F9EA-479C-BA2A-53EC73B2FC59}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DA9C2991-F9EA-479C-BA2A-53EC73B2FC59}.Release|Any CPU.Build.0 = Release|Any CPU
+		{897F30AA-F9CD-4C5E-AA83-2869B54D4F4D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{897F30AA-F9CD-4C5E-AA83-2869B54D4F4D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{897F30AA-F9CD-4C5E-AA83-2869B54D4F4D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{897F30AA-F9CD-4C5E-AA83-2869B54D4F4D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
