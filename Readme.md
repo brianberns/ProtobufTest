@@ -1,3 +1,5 @@
+Written for [this SO question](https://stackoverflow.com/questions/69283641/does-protobuf-support-tuples/69289933#69289933).
+
 To run:
 
 * Start `ProtobufServer` from a command line shell.
